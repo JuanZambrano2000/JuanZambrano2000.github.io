@@ -72,7 +72,7 @@
           </div>
             <div class="row">
               <div class="col s12 m12 l12">
-                <p class="light">iDogChain es una página encargada en la adopción de animales, a nosotros no nos importan que tengan cero, una, dos, cuatro o  mil, solo buscamos que todos los animales reciban todo el amor del mundo, que sean felices y también den todo el amor que puedan dar.</p>
+                <p class="light">iDogChain es una página encargada en la adopción de animales, a nosotros no nos importan que tengan cero, una, dos, cuatro o  mil patas, solo buscamos que todos los animales reciban todo el amor del mundo, que sean felices y también den todo el amor que puedan dar.</p>
             </div>
           </div>
           <div class="row">
@@ -83,6 +83,11 @@
         </div>
       </div>
     </body>
+
+    <form name="Upload" action="#" enctype="multipart/form-data" method="post">
+   <p>Filename: <input type="file" name="submitfile" id="submitfile" />
+   <input type="button" value="Send" onClick="checkSize();" />
+</form>
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -141,7 +146,7 @@
                <input id="email" type="email" class="validate">
                <label for="email">Email</label>
              </div>
-             <button class="btn waves-effect waves-light col s2 m2 l2" type="submit" name="action">Enviar
+             <button class="btn waves-effect waves-light modal-trigger col s2 m2 l2 " type="submit" name="action" href="#modal1">Enviar
    <i class="material-icons right">send</i>
  </button>
            </div>
@@ -156,6 +161,27 @@
       </div>
     </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Muchas gracias :)</h4>
+      <p>De ahora en Adelante recibirá consejos para cuidar a su mascota, noticias sobre nuevos eventos que hagamos y notificaciones acerca de nuevas mascotas para que pueda adoptar </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Perfecto</a>
+    </div>
+  </div>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Muchas gracias :)</h4>
+      <p>Gracias a gente como </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Perfecto</a>
+    </div>
   </div>
 
   <footer class="page-footer teal">
@@ -205,7 +231,26 @@
     </footer>
 
   <!--  Scripts-->
+  <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+  <script language="JavaScript">
+function checkSize()
+{
+    im = new Image();
+    im.src = document.Upload.submitfile.value;
+if(!im.src)
+    im.src = document.getElementById('submitfile').value;
+    alert(im.src);
+    alert(im.width);
+    alert(im.height);
+    alert(im.fileSize);
 
+}
+</script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
