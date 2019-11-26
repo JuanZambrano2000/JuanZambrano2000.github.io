@@ -84,10 +84,85 @@
       </div>
     </body>
 
-    <form name="Upload" action="#" enctype="multipart/form-data" method="post">
-   <p>Filename: <input type="file" name="submitfile" id="submitfile" />
-   <input type="button" value="Send" onClick="checkSize();" />
-</form>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>¿Quisiera apoyarnos subiendo alguna mascota?</h4>
+              <p class="light">No te ha pasado que te encuentras un animal pero decides dejarlo, ya sea porque no tienes donde dejarlo, talvez tus papas te regañan, total no importa el caso, lo que busca esta página es que no vuelva a pasar esta situación, lo que buscamos que el encontrar lugar para una mascota sea tan fácil como dar un clic, también talvez te mudas de país, descubres que la alergia era causada por tu mascota, también podemos ayudar en esos casos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix0">Su nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Teléfono</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+            <div class="input-field col s12 m12 l12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+    </div>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix1" type="text" class="validate">
+            <label for="icon_prefix">Nombre de la mascota</label>
+          </div>
+          <div class="input-field col s6">
+            <form action="#">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>File</span>
+                <input type="file" multiple>
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </form>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Ingrese una breve descripción del animal</label>
+        </div>
+      </div>
+    </form>
+    <button class="btn waves-effect waves-light modal-trigger col s2 m2 l2 " type="submit" name="action" href="#modal2">Enviar
+<i class="material-icons right">send</i>
+</button>
+  </div>
+    </div>
+  </div>
+</div>
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -168,6 +243,16 @@
     <div class="modal-content">
       <h4>Muchas gracias :)</h4>
       <p>De ahora en Adelante recibirá consejos para cuidar a su mascota, noticias sobre nuevos eventos que hagamos y notificaciones acerca de nuevas mascotas para que pueda adoptar </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Perfecto</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Muchas gracias :)</h4>
+      <p>Su publicacion se vera reflajado en un plazo de 10 minutos a 1 hora</p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Perfecto</a>
